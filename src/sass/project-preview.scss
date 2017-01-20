@@ -1,0 +1,70 @@
+@import 'mixins';
+
+.ppContainer {
+  @include inline();
+
+  border: 1px solid #000;
+
+  margin: 30px;
+
+  width: 90%;
+  height: 325px;
+
+  p {
+    margin: 10px;
+  }
+}
+
+.ppImage {
+  float: left;
+
+  border: 1px dashed #000;
+  margin: 10px;
+
+  width: 350px;
+  height: 300px;
+}
+
+.ppTitle {
+  font-weight: bold;
+}
+
+.ppTechnologies {
+}
+
+.ppDescription {
+}
+
+.ppImage {
+}
+
+.ppImage {
+}
+
+
+// Desktop
+
+@media only screen and (min-width: 1100px) {
+  .ppContainer {
+    @include inline();
+
+    border: 1px solid #000;
+
+    margin: 30px;
+
+    width: 370px;
+    height: 450px;
+
+    p {
+      margin: 10px;
+    }
+  }
+
+  .ppImage {
+    border: 1px dashed #000;
+    margin: 10px;
+
+    width: 350px;
+    height: 300px;
+  }
+}

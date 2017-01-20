@@ -1,0 +1,15 @@
+$bg-color: #694A59;
+$header-color: #53334F;
+$font-color: #F5E9CE;
+$highlight-color: #FFA024;
+$link-color: #F8C857;
+
+@mixin no-margins() {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin inline() {
+  display: inline-block;
+  vertical-align: top;
+}

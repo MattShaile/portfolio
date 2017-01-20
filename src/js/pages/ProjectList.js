@@ -1,5 +1,7 @@
 import React from "react";
 
+import ProjectPreview from "../components/ProjectPreview";
+
 export default class ProjectList extends React.Component {
 
   constructor() {
@@ -9,7 +11,12 @@ export default class ProjectList extends React.Component {
   render() {
     return (
       <div>
-       Project list
+        <ProjectPreview/>
+        <ProjectPreview/>
+        <ProjectPreview/>
+        <ProjectPreview/>
+        <ProjectPreview/>
+        <ProjectPreview/>
       </div>
     );
   }

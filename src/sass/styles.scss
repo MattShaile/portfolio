@@ -1,11 +1,19 @@
-.header {
-  display: inline-block;
+@import 'mixins';
+
+.bold {
+  font-weight: bold;
 }
 
-nav {
-  display: inline-block;
+html, body {
+  @include no-margins();
+
+  background-color: $bg-color;
+  color: $font-color;
 }
 
-nav li {
-  display: inline-block;
+a {
+  color: $link-color;
 }
+
+@import 'navigation';
+@import 'project-preview';

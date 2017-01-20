@@ -1,0 +1,132 @@
+@import 'mixins';
+
+header {
+  @include no-margins();
+  height: 50px;
+
+  text-align: center;
+
+  background-color: $header-color;
+}
+
+.content {
+  margin: auto;
+
+  width: 100%;
+  max-width: 1300px;
+}
+
+.title {
+  @include no-margins();
+  float: left;
+
+  width: 250px;
+
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.menuButton {
+  float: right;
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/menuButton.png");
+}
+
+.showNav {
+  display: block;
+}
+
+.hideNav {
+  display: none;
+}
+
+nav {
+  @include no-margins();
+
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+
+  float: right;
+
+  ul {
+    @include no-margins();
+
+    list-style: none;
+    margin-right: 50px;
+
+  }
+
+  li {
+    @include no-margins();
+
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+
+    background-image: url("../img/button.png");
+
+    text-align: center;
+    vertical-align: middle;
+
+  }
+}
+
+// Desktop
+
+@media only screen and (min-width: 1100px) {
+
+  .hideNav {
+    display: block;
+  }
+
+  .title {
+    @include no-margins();
+    @include inline();
+
+    float: none;
+
+    width: 250px;
+
+    font-size: 20px;
+    text-align: center;
+
+  }
+
+  .menuButton {
+    display: none;
+  }
+
+  nav {
+    @include inline();
+
+    width: 800px;
+
+    position: static;
+    float: none;
+
+    ul {
+      @include no-margins();
+      @include inline();
+    }
+
+    li {
+      @include no-margins();
+      @include inline();
+
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+
+      background-image: url("../img/button.png");
+
+      text-align: center;
+      vertical-align: middle;
+
+    }
+  }
+}

@@ -1,8 +1,139 @@
-.header {
-  display: inline-block; }
+.bold {
+  font-weight: bold; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #694A59;
+  color: #F5E9CE; }
+
+a {
+  color: #F8C857; }
+
+header {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  text-align: center;
+  background-color: #53334F; }
+
+.content {
+  margin: auto;
+  width: 100%;
+  max-width: 1300px; }
+
+.title {
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 250px;
+  font-size: 20px;
+  text-align: center; }
+
+.menuButton {
+  float: right;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/menuButton.png"); }
+
+.showNav {
+  display: block; }
+
+.hideNav {
+  display: none; }
 
 nav {
-  display: inline-block; }
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  float: right; }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-right: 50px; }
+  nav li {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-image: url("../img/button.png");
+    text-align: center;
+    vertical-align: middle; }
 
-nav li {
-  display: inline-block; }
+@media only screen and (min-width: 1100px) {
+  .hideNav {
+    display: block; }
+  .title {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    width: 250px;
+    font-size: 20px;
+    text-align: center; }
+  .menuButton {
+    display: none; }
+  nav {
+    display: inline-block;
+    vertical-align: top;
+    width: 800px;
+    position: static;
+    float: none; }
+    nav ul {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      vertical-align: top; }
+    nav li {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      vertical-align: top;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      background-image: url("../img/button.png");
+      text-align: center;
+      vertical-align: middle; } }
+
+.ppContainer {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #000;
+  margin: 30px;
+  width: 90%;
+  height: 325px; }
+  .ppContainer p {
+    margin: 10px; }
+
+.ppImage {
+  float: left;
+  border: 1px dashed #000;
+  margin: 10px;
+  width: 350px;
+  height: 300px; }
+
+.ppTitle {
+  font-weight: bold; }
+
+@media only screen and (min-width: 1100px) {
+  .ppContainer {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #000;
+    margin: 30px;
+    width: 370px;
+    height: 450px; }
+    .ppContainer p {
+      margin: 10px; }
+  .ppImage {
+    border: 1px dashed #000;
+    margin: 10px;
+    width: 350px;
+    height: 300px; } }
