@@ -1,5 +1,7 @@
 import React from "react";
 
+import AchievementBar from "../components/AchievementBar";
+
 export default class Navigation extends React.Component {
 
   constructor() {
@@ -27,10 +29,10 @@ export default class Navigation extends React.Component {
           </h1>
           <nav>
             <ul class={this.state.navOpenClass}>
-              <li><a href="#">Javascript</a></li>
-              <li><a href="#">Unity</a></li>
-              <li><a href="#">Casino</a></li>
-              <li><a href="#">More</a></li>
+              <li><a href="#Javascript">Javascript</a></li>
+              <li><a href="#Unity">Unity</a></li>
+              <li><a href="#Casino">Casino</a></li>
+              <li><a href="#More">More</a></li>
             </ul>
           </nav>
           <div class="menuButton" onClick={this.toggleNav.bind(this)}>
@@ -40,6 +42,8 @@ export default class Navigation extends React.Component {
         <div class="content">
           {this.props.children}
         </div>
+
+        <AchievementBar/>
       </div>
     );
   }
