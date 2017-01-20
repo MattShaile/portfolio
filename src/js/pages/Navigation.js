@@ -9,7 +9,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <h1 id="header">
+        <h1 class="header">
           Matthew Shaile<br />Portfolio
         </h1>
         <nav>
