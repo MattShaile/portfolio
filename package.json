@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "./node_modules/.bin/node-sass --include-path src/sass/ src/sass/styles.scss src/stylesheets/styles.css  -w",
-    "webpack": "./node_modules/.bin/webpack-dev-server --host 0.0.0.0 --content-base src --inline --hot",
+    "css": "./node_modules/.bin/node-sass --include-path src/sass/ src/sass/styles.scss src/public/stylesheets/styles.css  -w",
+    "webpack": "./node_modules/.bin/webpack-dev-server --host 0.0.0.0 --content-base src/public --inline --hot",
     "dev": "npm-run-all --parallel css webpack"
   },
   "repository": {
