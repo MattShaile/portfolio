@@ -20,7 +20,7 @@
     },
     {
       "name": "Roulette",
-      "tech": "Unity, C#, iGaming",
+      "tech": "Unity, C#, Casino",
       "thumb": "img/gameC.jpg",
       "image": "img/gameA.jpg",
       "code": "http://www.google.com",
@@ -29,7 +29,7 @@
     },
     {
       "name": "High 5 Slots",
-      "tech": "Javascript (ES5), Phaser, Mocha, iGaming",
+      "tech": "Javascript (ES5), Phaser, Mocha, Casino",
       "thumb": "img/gameD.jpg",
       "image": "img/gameA.jpg",
       "code": "http://www.google.com",

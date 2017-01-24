@@ -1,5 +1,23 @@
 @import 'mixins';
 
+.back-button {
+  @include bevel();
+  @include no-margins();
+  @include pixel-font();
+
+  width: 200px;
+
+  margin: 20px auto;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  font-weight: normal;
+  font-size: 40px;
+
+  cursor: pointer;
+}
+
 .project {
   position: relative;
 
@@ -44,7 +62,7 @@
 
       width: 100%;
 
-      height: 150px;
+      height: 210px;
 
       background-color: $header-color;
     }
@@ -80,6 +98,7 @@
 
     @media #{$desktop-only} {
       .link-container {
+        margin-top: 30px;
         background-color: transparent;
       }
     }

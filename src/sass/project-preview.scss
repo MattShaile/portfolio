@@ -1,5 +1,23 @@
 @import 'mixins';
 
+.section-title {
+  @include bevel();
+  @include no-margins();
+  @include pixel-font();
+
+  width: 200px;
+
+  margin: 20px auto;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  font-weight: normal;
+  font-size: 40px;
+
+  cursor: default;
+}
+
 .project-preview {
   position: relative;
 

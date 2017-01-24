@@ -96,6 +96,9 @@ header {
       line-height: 80px;
       text-align: center;
       vertical-align: middle; }
+      @media only screen and (min-width: 1310px) {
+        header nav li {
+          border-width: 5px; } }
     header nav a {
       color: #000;
       display: block;
@@ -116,8 +119,7 @@ header {
         vertical-align: top;
         width: 200px;
         height: 65px;
-        line-height: 65px;
-        border-width: 5px; }
+        line-height: 65px; }
       header nav a {
         font-size: 35px; } }
   header .hamburger {
@@ -140,6 +142,9 @@ header {
     color: #763317;
     background-color: #F07818;
     background-size: 100px 100px; }
+    @media only screen and (min-width: 1310px) {
+      header .hamburger {
+        border-width: 5px; } }
   @media only screen and (min-width: 1310px) {
     header .hamburger {
       display: none; } }
@@ -168,6 +173,25 @@ header {
 @media only screen and (min-width: 1310px) {
   .hideNav {
     display: block; } }
+
+.section-title {
+  background-color: #F07818;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #b2591a #FFA024 #FFA024 #b2591a;
+  padding: 0;
+  margin: 0;
+  font-family: 'VT323', monospace;
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 40px;
+  cursor: default; }
+  @media only screen and (min-width: 1310px) {
+    .section-title {
+      border-width: 5px; } }
 
 .project-preview {
   position: relative;
@@ -244,6 +268,25 @@ header {
     height: 510px;
     font-size: 16px; } }
 
+.back-button {
+  background-color: #F07818;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #b2591a #FFA024 #FFA024 #b2591a;
+  padding: 0;
+  margin: 0;
+  font-family: 'VT323', monospace;
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 40px;
+  cursor: pointer; }
+  @media only screen and (min-width: 1310px) {
+    .back-button {
+      border-width: 5px; } }
+
 .project {
   position: relative;
   font-size: 20px;
@@ -273,7 +316,7 @@ header {
       top: 0;
       left: 0;
       width: 100%;
-      height: 150px;
+      height: 210px;
       background-color: #78C0A8; } }
   .project .main-container {
     position: relative;
@@ -295,6 +338,7 @@ header {
       background-color: #78C0A8; }
     @media only screen and (min-width: 1310px) {
       .project .copy-container .link-container {
+        margin-top: 30px;
         background-color: transparent; } }
   .project .image {
     margin: 0 0 20px 5%;
