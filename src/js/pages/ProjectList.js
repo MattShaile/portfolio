@@ -14,8 +14,6 @@ export default class ProjectList extends React.Component {
 
   constructor(props) {
     super();
-
-    console.log(props);
   }
 
   componentWillMount() {

@@ -1,0 +1,83 @@
+@import 'mixins';
+
+.project {
+  font-size: 20px;
+
+  border: 2px solid $title-color;
+
+  margin: 18px auto;
+
+  width: 90%;
+  min-width: 900px;
+
+  p {
+    margin: 10px 30px;
+  }
+
+  h3 {
+    @include no-margins();
+
+    margin-left: 5%;
+
+    font-weight: normal;
+  }
+
+  .title-bg {
+    @include no-margins();
+
+    padding: 20px 0;
+
+    background-color: $header-color;
+
+    .image {
+
+      margin: 0 0 10px 5%;
+      width: 90%;
+
+      border: solid 1px $title-color;
+    }
+
+    .title {
+      @include pixel-font();
+
+      font-size: 50px;
+
+      z-index: 1;
+
+      padding-bottom: 20px;
+
+      color: $title-color;
+    }
+
+    .label {
+      @include pixel-font();
+
+      color: $title-color;
+
+      font-size: 35px;
+    }
+
+    .technologies {
+      color: $title-color;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    a {
+      color: $title-color;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  .description {
+    height: 140px;
+
+    margin: 30px;
+
+    color: $p-color;
+    font-size: 20px;
+
+    overflow: hidden;
+    line-height: 20px;
+  }
+}

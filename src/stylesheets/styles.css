@@ -239,6 +239,54 @@ header {
     height: 510px;
     font-size: 16px; } }
 
+.project {
+  font-size: 20px;
+  border: 2px solid #112212;
+  margin: 18px auto;
+  width: 90%;
+  min-width: 900px; }
+  .project p {
+    margin: 10px 30px; }
+  .project h3 {
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    font-weight: normal; }
+  .project .title-bg {
+    padding: 0;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #78C0A8; }
+    .project .title-bg .image {
+      margin: 0 0 10px 5%;
+      width: 90%;
+      border: solid 1px #112212; }
+    .project .title-bg .title {
+      font-family: 'VT323', monospace;
+      font-size: 50px;
+      z-index: 1;
+      padding-bottom: 20px;
+      color: #112212; }
+    .project .title-bg .label {
+      font-family: 'VT323', monospace;
+      color: #112212;
+      font-size: 35px; }
+    .project .title-bg .technologies {
+      color: #112212;
+      font-size: 24px;
+      font-weight: bold; }
+    .project .title-bg a {
+      color: #112212;
+      font-size: 24px;
+      font-weight: bold; }
+  .project .description {
+    height: 140px;
+    margin: 30px;
+    color: #333;
+    font-size: 20px;
+    overflow: hidden;
+    line-height: 20px; }
+
 .achievementBar {
   position: fixed;
   z-index: 1;

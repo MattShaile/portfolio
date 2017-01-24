@@ -14,8 +14,6 @@ export default class Project extends React.Component {
 
   constructor(props) {
     super();
-
-    console.log(props);
   }
 
   componentWillMount() {
@@ -34,14 +32,17 @@ export default class Project extends React.Component {
 
     return (
       <div class="project">
-        <div class="title-bg"></div>
 
-        <img class="image" src={project.thumb}/>
+        <div class="title-bg">
 
-        <p class="title">{project.name}</p>
-        <p><span class="technologies-label">Technologies:</span> <span class="technologies">{project.tech}</span></p>
-        <p><span class="source-label">Source:</span> <a class="source">{project.code}</a></p>
-        <p><span class="demo-label">Demo:</span> <a class="demo">{project.demo}</a></p>
+          <h3 class="title">{project.name}</h3>
+
+          <img class="image" src={project.thumb}/>
+
+          <p><span class="label">Technologies:</span> <span class="technologies">{project.tech}</span></p>
+          <p><span class="label">Source:</span> <a>{project.code}</a></p>
+          <p><span class="label">Demo:</span> <a>{project.demo}</a></p>
+        </div>
 
         <p class="description">
           {project.description}
