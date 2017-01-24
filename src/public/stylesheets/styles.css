@@ -39,13 +39,13 @@ header {
   background-color: #78C0A8; }
   header .container {
     margin: auto;
-    max-width: 1300px; }
+    max-width: 1236px; }
   header .title {
     padding: 0;
     margin: 0;
     color: #112212;
     margin-top: 10px;
-    margin-left: 45px;
+    margin-left: 30px;
     float: left;
     width: 230px;
     text-align: left; }
@@ -110,10 +110,9 @@ header {
     header nav {
       display: inline-block;
       vertical-align: top;
+      position: static;
       float: right;
-      width: 900px;
-      margin-right: 10px;
-      position: static; }
+      width: 840px; }
       header nav li {
         display: inline-block;
         vertical-align: top;
@@ -157,11 +156,11 @@ header {
 .content {
   padding: 100px 0;
   margin: auto;
-  width: 100%;
-  max-width: 1300px; }
+  width: 100%; }
 
 @media only screen and (min-width: 1310px) {
   .content {
+    max-width: 1342px;
     padding: 0 0 100px 0; } }
 
 .showNav {
@@ -182,91 +181,100 @@ header {
   padding: 0;
   margin: 0;
   font-family: 'VT323', monospace;
-  width: 200px;
-  margin: 20px auto;
-  text-align: center;
+  height: 70px;
+  margin: 0 auto;
+  padding-left: 30px;
   text-transform: capitalize;
   font-weight: normal;
   font-size: 40px;
+  line-height: 70px;
   cursor: default; }
   @media only screen and (min-width: 1310px) {
     .section-title {
       border-width: 5px; } }
 
-.project-preview {
-  position: relative;
-  font-size: 20px;
-  border: 2px solid #112212;
-  margin: 18px auto;
-  width: 90%;
-  min-width: 900px;
-  height: 325px; }
-  .project-preview p {
-    margin: 10px; }
-  .project-preview .image {
-    position: relative;
-    float: left;
-    margin: 10px 15px 10px 10px;
-    width: 350px;
-    height: 300px;
-    border: solid 1px #78C0A8;
-    z-index: 1; }
-  @media only screen and (min-width: 1310px) {
-    .project-preview .image {
-      margin: 10px; } }
-  .project-preview .title-bg {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 70px;
-    background-color: #78C0A8; }
-  @media only screen and (min-width: 1310px) {
-    .project-preview .title-bg {
-      height: 370px; } }
-  .project-preview .title {
-    font-family: 'VT323', monospace;
-    position: relative;
-    font-size: 50px;
-    z-index: 1;
-    padding-bottom: 20px;
-    color: #112212; }
-  @media only screen and (min-width: 1310px) {
-    .project-preview .title {
-      font-size: 40px;
-      padding-bottom: 10px; } }
-  .project-preview .technologies-label {
-    font-family: 'VT323', monospace;
-    font-size: 35px; }
-  @media only screen and (min-width: 1310px) {
-    .project-preview .technologies-label {
-      font-size: 25px; } }
-  .project-preview .technologies {
-    color: #333;
-    font-size: 24px;
-    font-weight: bold; }
-  @media only screen and (min-width: 1310px) {
-    .project-preview .technologies {
-      font-size: 18px; } }
-  .project-preview .description {
-    height: 140px;
-    color: #333;
-    font-size: 20px;
-    overflow: hidden;
-    line-height: 20px; }
-  @media only screen and (min-width: 1310px) {
-    .project-preview .description {
-      height: 60px;
-      font-size: 14px; } }
-
 @media only screen and (min-width: 1310px) {
-  .project-preview {
-    display: inline-block;
-    vertical-align: top;
-    margin: 28px;
-    width: 370px;
-    min-width: 370px;
-    height: 510px;
-    font-size: 16px; } }
+  .section-title {
+    width: 100%;
+    max-width: 1196px; } }
+
+.preview-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1290px; }
+  .preview-container .project-preview {
+    position: relative;
+    font-size: 20px;
+    border: 2px solid #112212;
+    margin: 18px auto;
+    width: 90%;
+    min-width: 900px;
+    height: 325px; }
+    .preview-container .project-preview p {
+      margin: 10px; }
+    .preview-container .project-preview .image {
+      position: relative;
+      float: left;
+      margin: 10px 15px 10px 10px;
+      width: 350px;
+      height: 300px;
+      border: solid 1px #78C0A8;
+      z-index: 1; }
+    @media only screen and (min-width: 1310px) {
+      .preview-container .project-preview .image {
+        margin: 10px; } }
+    .preview-container .project-preview .title-bg {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 70px;
+      background-color: #78C0A8; }
+    @media only screen and (min-width: 1310px) {
+      .preview-container .project-preview .title-bg {
+        height: 370px; } }
+    .preview-container .project-preview .title {
+      font-family: 'VT323', monospace;
+      position: relative;
+      font-size: 50px;
+      z-index: 1;
+      padding-bottom: 20px;
+      color: #112212; }
+    @media only screen and (min-width: 1310px) {
+      .preview-container .project-preview .title {
+        font-size: 40px;
+        padding-bottom: 10px; } }
+    .preview-container .project-preview .technologies-label {
+      font-family: 'VT323', monospace;
+      font-size: 35px; }
+    @media only screen and (min-width: 1310px) {
+      .preview-container .project-preview .technologies-label {
+        font-size: 25px; } }
+    .preview-container .project-preview .technologies {
+      color: #333;
+      font-size: 24px;
+      font-weight: bold; }
+    @media only screen and (min-width: 1310px) {
+      .preview-container .project-preview .technologies {
+        font-size: 18px; } }
+    .preview-container .project-preview .description {
+      height: 140px;
+      color: #333;
+      font-size: 20px;
+      overflow: hidden;
+      line-height: 20px; }
+    @media only screen and (min-width: 1310px) {
+      .preview-container .project-preview .description {
+        height: 60px;
+        font-size: 14px; } }
+  @media only screen and (min-width: 1310px) {
+    .preview-container .project-preview {
+      display: inline-block;
+      vertical-align: top;
+      margin: 28px;
+      width: 370px;
+      min-width: 370px;
+      height: 510px;
+      font-size: 16px; } }
 
 .back-button {
   background-color: #F07818;
@@ -292,6 +300,7 @@ header {
   font-size: 20px;
   border: 2px solid #112212;
   margin: 18px auto;
+  min-height: 650px;
   width: 90%;
   min-width: 900px; }
   .project span {
@@ -316,7 +325,7 @@ header {
       top: 0;
       left: 0;
       width: 100%;
-      height: 210px;
+      height: 190px;
       background-color: #78C0A8; } }
   .project .main-container {
     position: relative;
@@ -366,6 +375,7 @@ header {
     font-size: 24px;
     font-weight: bold; }
   .project .description {
+    white-space: pre-line;
     margin: 30px;
     color: #333;
     font-size: 20px; }

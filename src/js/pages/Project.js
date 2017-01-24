@@ -36,22 +36,19 @@ export default class Project extends React.Component {
 
     return (
       <div>
-        <div class="back-button" onClick={this.props.history.goBack}>
-          Back
-        </div>
         <div class="project">
 
           <div class="title-bg"></div>
 
           <div class="main-container">
             <h3 class="title">{project.name}</h3>
-            <img class="image" src={project.thumb}/>
+            <img class="image" src={project.image}/>
           </div>
           <div class="copy-container">
             <div class="link-container">
               <p><span class="label">Technologies:</span> <span class="technologies">{project.tech}</span></p>
-              <p><span class="label">Source:</span> <a>{project.code}</a></p>
-              <p><span class="label">Demo:</span> <a>{project.demo}</a></p>
+              <p><span class="label">Source:</span> <a href={project.code}>{project.codeLabel}</a></p>
+              <p><span class="label">Demo:</span> <a href={project.demo}>{project.demoLabel}</a></p>
             </div>
 
 

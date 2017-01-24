@@ -36,24 +36,9 @@ export default class ProjectList extends React.Component {
 
     let filteredProjects = this.props.projects.data.projects;
 
-    if (technology === "more") {
-      filteredProjects = _.filter(filteredProjects, (project) => {
-        let valid = true;
-
-        _.each(["javascript", "unity", "igaming"], (tech) => {
-          if (project.tech.toLowerCase().indexOf(tech) > -1) {
-            valid = false;
-            return false;
-          }
-        });
-
-        return valid;
-      });
-    } else {
-      filteredProjects = _.filter(filteredProjects, (project) => {
-        return project.tech.toLowerCase().indexOf(technology) > -1;
-      });
-    }
+    filteredProjects = _.filter(filteredProjects, (project) => {
+      return project.category.toLowerCase().indexOf(technology) > -1;
+    });
 
     const projectElements = _.map(filteredProjects, (project) => {
       return <ProjectPreview key={project.name} name={project.name} thumb={project.thumb} tech={project.tech}
@@ -65,7 +50,7 @@ export default class ProjectList extends React.Component {
         <div class="section-title">
           {technology}
         </div>
-        <div>
+        <div class="preview-container">
           {projectElements}
         </div>
       </div>
