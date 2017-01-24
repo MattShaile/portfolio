@@ -12,7 +12,7 @@ import {fetchProjects} from "../actions/projectsActions";
 })
 export default class Project extends React.Component {
 
-  constructor(props) {
+  constructor() {
     super();
   }
 
@@ -26,8 +26,10 @@ export default class Project extends React.Component {
       return <div>Loading...</div>
     }
 
-    const project = _.find(this.props.projects.data.projects, function (project) {
-      return project.name == "Roulette";
+    const projectName = this.props.params.project;
+
+    const project = _.find(this.props.projects.data.projects, (project) => {
+      return project.name.toLowerCase() == projectName;
     });
 
     return (

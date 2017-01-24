@@ -11,7 +11,8 @@
 
 @media #{$desktop-only} {
   .closeNav {
-    display: none;
+    width: 0;
+    height: 0;
   }
 }
 
@@ -150,20 +151,6 @@ header {
     }
   }
 
-  .showNav {
-    display: block;
-  }
-
-  .hideNav {
-    display: none;
-  }
-
-  @media #{$desktop-only} {
-    .hideNav {
-      display: block;
-    }
-  }
-
   .hamburger {
     @include bevel();
     @include no-select();
@@ -206,5 +193,19 @@ header {
 @media #{$desktop-only} {
   .content {
     padding: 0 0 100px 0;
+  }
+}
+
+.showNav {
+  display: block;
+}
+
+.hideNav {
+  display: none;
+}
+
+@media #{$desktop-only} {
+  .hideNav {
+    display: block;
   }
 }

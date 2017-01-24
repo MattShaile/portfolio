@@ -31,7 +31,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <div class={"closeNav " + this.state.navOpenClass} onMouseDown={this.closeNav.bind(this)}
+        <div class={this.state.navOpenClass + " closeNav"} onMouseDown={this.closeNav.bind(this)}
              onTouchStart={this.closeNav.bind(this)}></div>
         <header>
           <div class="container">

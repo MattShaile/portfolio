@@ -12,7 +12,7 @@ import Project from "./pages/Project";
 const app = document.getElementById('app');
 ReactDOM.render(
   <Provider store={store}>
-    <Router history={hashHistory}>
+    <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
       <Route path="/" component={Navigation}>
         <IndexRoute component={ProjectList}/>
         <Route path="/projects(/:technology)" component={ProjectList}/>
