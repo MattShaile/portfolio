@@ -9,13 +9,16 @@ export default class ProjectPreview extends React.Component {
   render() {
     return (
       <div class="ppContainer">
-        <img class="ppImage" src="img/html5.png" />
+        <div class="ppTitleBg"></div>
 
-        <p class="ppTitle">Product Title</p>
-        <p class="ppTechnologies">Key technologies: <span class="bold">Javascript, React, Redux</span></p>
+        <img class="ppImage" src={this.props.thumb}/>
+
+        <p class="ppTitle">{this.props.name}</p>
+        <p><span class="ppTechnologiesLabel">Technologies:</span> <span
+          class="ppTechnologies">{this.props.tech}</span></p>
 
         <p class="ppDescription">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
+          {this.props.description}
         </p>
 
       </div>

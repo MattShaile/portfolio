@@ -1,8 +1,22 @@
-$bg-color: #694A59;
-$header-color: #53334F;
-$font-color: #F5E9CE;
+$bg-color: #FCEBB6;
+$header-color: #78C0A8;
+$title-color: #1a3a2b;
+$font-color: #000;
+$p-color: #333;
 $highlight-color: #FFA024;
-$link-color: #F8C857;
+$link-color: #78C0A8;
+
+$button-color: #F07818;
+$button-text-color: #000;
+$button-dark-color: #b2591a;
+$button-light-color: #FFA024;
+$hamburger-color: #763317;
+
+$footer-color: #2c5949;
+
+@mixin pixel-font() {
+  font-family: 'VT323', monospace;
+}
 
 @mixin no-margins() {
   padding: 0;
@@ -12,4 +26,23 @@ $link-color: #F8C857;
 @mixin inline() {
   display: inline-block;
   vertical-align: top;
+}
+
+@mixin no-select() {
+  cursor: default;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin bevel() {
+  background-color: $button-color;
+
+  border-style: solid;
+  border-width: 10px;
+  border-color: $button-dark-color $button-light-color $button-light-color $button-dark-color;
 }

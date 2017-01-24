@@ -1,20 +1,26 @@
 @import 'mixins';
 
-.bold {
-  font-weight: bold;
-}
-
 html, body {
   @include no-margins();
 
+  font-family: sans-serif;
+
   background-color: $bg-color;
-  color: $font-color;
 }
 
 a {
   color: $link-color;
 }
 
+p {
+  color: $font-color;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css?family=VT323');
 @import 'navigation';
 @import 'project-preview';
 @import 'achievements';
