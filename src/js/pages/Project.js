@@ -33,20 +33,24 @@ export default class Project extends React.Component {
     return (
       <div class="project">
 
-        <div class="title-bg">
+        <div class="title-bg"></div>
 
+        <div class="main-container">
           <h3 class="title">{project.name}</h3>
-
           <img class="image" src={project.thumb}/>
-
-          <p><span class="label">Technologies:</span> <span class="technologies">{project.tech}</span></p>
-          <p><span class="label">Source:</span> <a>{project.code}</a></p>
-          <p><span class="label">Demo:</span> <a>{project.demo}</a></p>
         </div>
+        <div class="copy-container">
+          <div class="link-container">
+            <p><span class="label">Technologies:</span> <span class="technologies">{project.tech}</span></p>
+            <p><span class="label">Source:</span> <a>{project.code}</a></p>
+            <p><span class="label">Demo:</span> <a>{project.demo}</a></p>
+          </div>
 
-        <p class="description">
-          {project.description}
-        </p>
+
+          <p class="description">
+            {project.description}
+          </p>
+        </div>
 
       </div>
     );

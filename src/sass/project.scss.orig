@@ -12,13 +12,8 @@
   width: 90%;
   min-width: 900px;
 
-  span {
-    @include no-margins();
-  }
-
   p {
-    padding: 0;
-    margin: 0 30px 10px 30px;
+    margin: 10px 30px;
   }
 
   h3 {
@@ -30,76 +25,41 @@
   }
 
   .title-bg {
-    display: none;
-  }
+    @include no-margins();
 
-  @media #{$desktop-only} {
-    .title-bg {
-      display: block;
-      @include no-margins();
+    position: absolute;
+    top: 0;
+    left: 0;
 
-      position: absolute;
-      top: 0;
-      left: 0;
+    width: 100%;
 
-      width: 100%;
+    height: 150px;
 
-      height: 150px;
-
-      background-color: $header-color;
-    }
+    background-color: $header-color;
   }
 
   .main-container {
     position: relative;
     z-index: 1;
 
-    background-color: $header-color;
+    float: left;
 
-    width: 100%;
-  }
+    margin: 10px;
 
-  @media #{$desktop-only} {
-    .main-container {
-      background-color: transparent;
-
-      float: left;
-
-      margin: 10px;
-
-      width: 670px;
-    }
+    width: 670px;
   }
 
   .copy-container {
-    .link-container {
-      margin-top: -2px;
-      padding-bottom: 10px;
-      background-color: $header-color;
-    }
-
-    @media #{$desktop-only} {
-      .link-container {
-        background-color: transparent;
-      }
-    }
-
     position: relative;
     z-index: 1;
   }
 
   .image {
-    margin: 0 0 20px 5%;
+    margin: 0 0 10px 5%;
 
-    width: 90%;
+    width: 600px;
 
     border: solid 1px $title-color;
-  }
-
-  @media #{$desktop-only} {
-    .image {
-      width: 600px;
-    }
   }
 
   .title {
@@ -109,7 +69,7 @@
 
     z-index: 1;
 
-    padding: 20px 0;
+    padding-bottom: 20px;
 
     color: $title-color;
   }
@@ -135,7 +95,10 @@
   }
 
   .description {
+<<<<<<< Updated upstream
+=======
 
+>>>>>>> Stashed changes
     margin: 30px;
 
     color: $p-color;

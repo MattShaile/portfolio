@@ -240,45 +240,82 @@ header {
     font-size: 16px; } }
 
 .project {
+  position: relative;
   font-size: 20px;
   border: 2px solid #112212;
   margin: 18px auto;
   width: 90%;
   min-width: 900px; }
+  .project span {
+    padding: 0;
+    margin: 0; }
   .project p {
-    margin: 10px 30px; }
+    padding: 0;
+    margin: 0 30px 10px 30px; }
   .project h3 {
     padding: 0;
     margin: 0;
     margin-left: 5%;
     font-weight: normal; }
   .project .title-bg {
-    padding: 0;
-    margin: 0;
+    display: none; }
+  @media only screen and (min-width: 1310px) {
+    .project .title-bg {
+      display: block;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150px;
+      background-color: #78C0A8; } }
+  .project .main-container {
+    position: relative;
+    z-index: 1;
+    background-color: #78C0A8;
+    width: 100%; }
+  @media only screen and (min-width: 1310px) {
+    .project .main-container {
+      background-color: transparent;
+      float: left;
+      margin: 10px;
+      width: 670px; } }
+  .project .copy-container {
+    position: relative;
+    z-index: 1; }
+    .project .copy-container .link-container {
+      margin-top: -2px;
+      padding-bottom: 10px;
+      background-color: #78C0A8; }
+    @media only screen and (min-width: 1310px) {
+      .project .copy-container .link-container {
+        background-color: transparent; } }
+  .project .image {
+    margin: 0 0 20px 5%;
+    width: 90%;
+    border: solid 1px #112212; }
+  @media only screen and (min-width: 1310px) {
+    .project .image {
+      width: 600px; } }
+  .project .title {
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+    z-index: 1;
     padding: 20px 0;
-    background-color: #78C0A8; }
-    .project .title-bg .image {
-      margin: 0 0 10px 5%;
-      width: 90%;
-      border: solid 1px #112212; }
-    .project .title-bg .title {
-      font-family: 'VT323', monospace;
-      font-size: 50px;
-      z-index: 1;
-      padding-bottom: 20px;
-      color: #112212; }
-    .project .title-bg .label {
-      font-family: 'VT323', monospace;
-      color: #112212;
-      font-size: 35px; }
-    .project .title-bg .technologies {
-      color: #112212;
-      font-size: 24px;
-      font-weight: bold; }
-    .project .title-bg a {
-      color: #112212;
-      font-size: 24px;
-      font-weight: bold; }
+    color: #112212; }
+  .project .label {
+    font-family: 'VT323', monospace;
+    color: #112212;
+    font-size: 35px; }
+  .project .technologies {
+    color: #112212;
+    font-size: 24px;
+    font-weight: bold; }
+  .project a {
+    color: #112212;
+    font-size: 24px;
+    font-weight: bold; }
   .project .description {
     margin: 30px;
     color: #333;
