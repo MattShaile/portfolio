@@ -280,12 +280,9 @@ header {
       font-size: 24px;
       font-weight: bold; }
   .project .description {
-    height: 140px;
     margin: 30px;
     color: #333;
-    font-size: 20px;
-    overflow: hidden;
-    line-height: 20px; }
+    font-size: 20px; }
 
 .achievementBar {
   position: fixed;
