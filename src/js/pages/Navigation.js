@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router";
 
 import AchievementBar from "../components/AchievementBar";
 
@@ -20,11 +21,18 @@ export default class Navigation extends React.Component {
     });
   }
 
+  closeNav() {
+    this.setState({
+      navOpen: false,
+      navOpenClass: "hideNav"
+    });
+  }
+
   render() {
     return (
       <div>
-        <div class={"closeNav " + this.state.navOpenClass} onMouseDown={this.toggleNav.bind(this)}
-             onTouchStart={this.toggleNav.bind(this)}></div>
+        <div class={"closeNav " + this.state.navOpenClass} onMouseDown={this.closeNav.bind(this)}
+             onTouchStart={this.closeNav.bind(this)}></div>
         <header>
           <div class="container">
             <div class="title">
@@ -33,10 +41,10 @@ export default class Navigation extends React.Component {
             </div>
             <nav>
               <ul class={this.state.navOpenClass}>
-                <li><a href="#Javascript">Javascript</a></li>
-                <li><a href="#Unity">Unity</a></li>
-                <li><a href="#Casino">Casino</a></li>
-                <li><a href="#More">More</a></li>
+                <li><Link to="projects/javascript">Javascript</Link></li>
+                <li><Link to="projects/unity">Unity</Link></li>
+                <li><Link to="projects/igaming">iGaming</Link></li>
+                <li><Link to="projects/more">More</Link></li>
               </ul>
             </nav>
           </div>

@@ -7,13 +7,16 @@ import store from "./store";
 
 import Navigation from "./pages/Navigation";
 import ProjectList from "./pages/ProjectList";
+import Project from "./pages/Project";
 
 const app = document.getElementById('app');
 ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory}>
       <Route path="/" component={Navigation}>
-        <IndexRoute component={ProjectList}></IndexRoute>
+        <IndexRoute component={ProjectList}/>
+        <Route path="/projects(/:technology)" component={ProjectList}/>
+        <Route path="/project(/:project)" component={Project}/>
       </Route>
     </Router>
   </Provider>

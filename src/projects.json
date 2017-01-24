@@ -4,30 +4,45 @@
       "name": "Merlin Hotel Calendar",
       "tech": "Javascript (ES2015), React, Flux",
       "thumb": "img/gameA.jpg",
+      "image": "img/gameA.jpg",
+      "code": "http://www.google.com",
+      "demo": "http://www.google.com",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet fringilla lectus quis accumsan. Duis imperdiet feugiat lacus sit amet pulvinar. Sed ut urna in eros finibus volutpat. Aliquam eget pretium lorem. Donec hendrerit magna nec justo congue interdum sed ac tellus. Maecenas faucibus euismod risus sed consectetur. Cras a aliquam ligula. Curabitur laoreet, turpis quis dignissim rhoncus, erat sem pulvinar lacus, vitae tempus magna dui nec lacus. Sed est leo, ullamcorper quis nibh id, faucibus finibus dolor. Vestibulum est erat, hendrerit in turpis vitae, placerat mollis ex. Curabitur cursus libero non aliquam accumsan. Proin ornare malesuada erat. Ut eleifend viverra lacus. Donec consequat pulvinar luctus.\nMauris a tincidunt justo. In varius ipsum vitae ullamcorper vehicula. Nunc auctor turpis ac mi ultrices, vitae porttitor felis convallis. Ut ornare metus at semper elementum. Aenean elementum nulla ut interdum sodales. Ut eu lorem mi. Sed aliquam blandit orci non consectetur.<br>Proin nec accumsan nisi. Maecenas malesuada tempus auctor. Integer ornare quis diam et convallis. Curabitur ullamcorper maximus porta. Nullam eu tempus est. Etiam commodo, quam a pharetra interdum, purus metus commodo felis, ac pulvinar dui tortor ut sem. Nulla luctus diam at nisi dictum sollicitudin. Cras fermentum posuere nulla quis pharetra. Cras dui dui, mollis eu justo et, interdum varius libero. Donec a purus scelerisque, malesuada urna id, laoreet metus. Suspendisse suscipit tellus sed ipsum euismod auctor."
     },
     {
       "name": "Portfolio",
       "tech": "Javascript (ES2015), React, Redux",
       "thumb": "img/GameB.png",
+      "image": "img/gameA.jpg",
+      "code": "http://www.google.com",
+      "demo": "http://www.google.com",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet fringilla lectus quis accumsan. Duis imperdiet feugiat lacus sit amet pulvinar. Sed ut urna in eros finibus volutpat. Aliquam eget pretium lorem. Donec hendrerit magna nec justo congue interdum sed ac tellus. Maecenas faucibus euismod risus sed consectetur. Cras a aliquam ligula. Curabitur laoreet, turpis quis dignissim rhoncus, erat sem pulvinar lacus, vitae tempus magna dui nec lacus. Sed est leo, ullamcorper quis nibh id, faucibus finibus dolor. Vestibulum est erat, hendrerit in turpis vitae, placerat mollis ex. Curabitur cursus libero non aliquam accumsan. Proin ornare malesuada erat. Ut eleifend viverra lacus. Donec consequat pulvinar luctus.\nMauris a tincidunt justo. In varius ipsum vitae ullamcorper vehicula. Nunc auctor turpis ac mi ultrices, vitae porttitor felis convallis. Ut ornare metus at semper elementum. Aenean elementum nulla ut interdum sodales. Ut eu lorem mi. Sed aliquam blandit orci non consectetur.<br>Proin nec accumsan nisi. Maecenas malesuada tempus auctor. Integer ornare quis diam et convallis. Curabitur ullamcorper maximus porta. Nullam eu tempus est. Etiam commodo, quam a pharetra interdum, purus metus commodo felis, ac pulvinar dui tortor ut sem. Nulla luctus diam at nisi dictum sollicitudin. Cras fermentum posuere nulla quis pharetra. Cras dui dui, mollis eu justo et, interdum varius libero. Donec a purus scelerisque, malesuada urna id, laoreet metus. Suspendisse suscipit tellus sed ipsum euismod auctor."
     },
     {
       "name": "Roulette",
       "tech": "Unity, C#",
       "thumb": "img/gameC.jpg",
+      "image": "img/gameA.jpg",
+      "code": "http://www.google.com",
+      "demo": "http://www.google.com",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet fringilla lectus quis accumsan. Duis imperdiet feugiat lacus sit amet pulvinar. Sed ut urna in eros finibus volutpat. Aliquam eget pretium lorem. Donec hendrerit magna nec justo congue interdum sed ac tellus. Maecenas faucibus euismod risus sed consectetur. Cras a aliquam ligula. Curabitur laoreet, turpis quis dignissim rhoncus, erat sem pulvinar lacus, vitae tempus magna dui nec lacus. Sed est leo, ullamcorper quis nibh id, faucibus finibus dolor. Vestibulum est erat, hendrerit in turpis vitae, placerat mollis ex. Curabitur cursus libero non aliquam accumsan. Proin ornare malesuada erat. Ut eleifend viverra lacus. Donec consequat pulvinar luctus.\nMauris a tincidunt justo. In varius ipsum vitae ullamcorper vehicula. Nunc auctor turpis ac mi ultrices, vitae porttitor felis convallis. Ut ornare metus at semper elementum. Aenean elementum nulla ut interdum sodales. Ut eu lorem mi. Sed aliquam blandit orci non consectetur.<br>Proin nec accumsan nisi. Maecenas malesuada tempus auctor. Integer ornare quis diam et convallis. Curabitur ullamcorper maximus porta. Nullam eu tempus est. Etiam commodo, quam a pharetra interdum, purus metus commodo felis, ac pulvinar dui tortor ut sem. Nulla luctus diam at nisi dictum sollicitudin. Cras fermentum posuere nulla quis pharetra. Cras dui dui, mollis eu justo et, interdum varius libero. Donec a purus scelerisque, malesuada urna id, laoreet metus. Suspendisse suscipit tellus sed ipsum euismod auctor."
     },
     {
       "name": "High 5 Slots",
       "tech": "Javascript (ES5), Phaser, Mocha",
       "thumb": "img/gameD.jpg",
+      "image": "img/gameA.jpg",
+      "code": "http://www.google.com",
+      "demo": "http://www.google.com",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet fringilla lectus quis accumsan. Duis imperdiet feugiat lacus sit amet pulvinar. Sed ut urna in eros finibus volutpat. Aliquam eget pretium lorem. Donec hendrerit magna nec justo congue interdum sed ac tellus. Maecenas faucibus euismod risus sed consectetur. Cras a aliquam ligula. Curabitur laoreet, turpis quis dignissim rhoncus, erat sem pulvinar lacus, vitae tempus magna dui nec lacus. Sed est leo, ullamcorper quis nibh id, faucibus finibus dolor. Vestibulum est erat, hendrerit in turpis vitae, placerat mollis ex. Curabitur cursus libero non aliquam accumsan. Proin ornare malesuada erat. Ut eleifend viverra lacus. Donec consequat pulvinar luctus.\nMauris a tincidunt justo. In varius ipsum vitae ullamcorper vehicula. Nunc auctor turpis ac mi ultrices, vitae porttitor felis convallis. Ut ornare metus at semper elementum. Aenean elementum nulla ut interdum sodales. Ut eu lorem mi. Sed aliquam blandit orci non consectetur.<br>Proin nec accumsan nisi. Maecenas malesuada tempus auctor. Integer ornare quis diam et convallis. Curabitur ullamcorper maximus porta. Nullam eu tempus est. Etiam commodo, quam a pharetra interdum, purus metus commodo felis, ac pulvinar dui tortor ut sem. Nulla luctus diam at nisi dictum sollicitudin. Cras fermentum posuere nulla quis pharetra. Cras dui dui, mollis eu justo et, interdum varius libero. Donec a purus scelerisque, malesuada urna id, laoreet metus. Suspendisse suscipit tellus sed ipsum euismod auctor."
     },
     {
       "name": "Arrival in Hell",
       "tech": "Unity C#",
       "thumb": "img/gameA.jpg",
+      "image": "img/gameA.jpg",
+      "code": "http://www.google.com",
+      "demo": "http://www.google.com",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet fringilla lectus quis accumsan. Duis imperdiet feugiat lacus sit amet pulvinar. Sed ut urna in eros finibus volutpat. Aliquam eget pretium lorem. Donec hendrerit magna nec justo congue interdum sed ac tellus. Maecenas faucibus euismod risus sed consectetur. Cras a aliquam ligula. Curabitur laoreet, turpis quis dignissim rhoncus, erat sem pulvinar lacus, vitae tempus magna dui nec lacus. Sed est leo, ullamcorper quis nibh id, faucibus finibus dolor. Vestibulum est erat, hendrerit in turpis vitae, placerat mollis ex. Curabitur cursus libero non aliquam accumsan. Proin ornare malesuada erat. Ut eleifend viverra lacus. Donec consequat pulvinar luctus.\nMauris a tincidunt justo. In varius ipsum vitae ullamcorper vehicula. Nunc auctor turpis ac mi ultrices, vitae porttitor felis convallis. Ut ornare metus at semper elementum. Aenean elementum nulla ut interdum sodales. Ut eu lorem mi. Sed aliquam blandit orci non consectetur.<br>Proin nec accumsan nisi. Maecenas malesuada tempus auctor. Integer ornare quis diam et convallis. Curabitur ullamcorper maximus porta. Nullam eu tempus est. Etiam commodo, quam a pharetra interdum, purus metus commodo felis, ac pulvinar dui tortor ut sem. Nulla luctus diam at nisi dictum sollicitudin. Cras fermentum posuere nulla quis pharetra. Cras dui dui, mollis eu justo et, interdum varius libero. Donec a purus scelerisque, malesuada urna id, laoreet metus. Suspendisse suscipit tellus sed ipsum euismod auctor."
     }
   ]

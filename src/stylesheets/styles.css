@@ -14,6 +14,16 @@ p {
 .bold {
   font-weight: bold; }
 
+.closeNav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+
+@media only screen and (min-width: 1310px) {
+  .closeNav {
+    display: none; } }
+
 header {
   padding: 0;
   margin: 0;
@@ -21,12 +31,128 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+  min-width: 395px;
   height: 100px;
   text-align: center;
   background-color: #78C0A8; }
   header .container {
     margin: auto;
     max-width: 1300px; }
+  header .title {
+    padding: 0;
+    margin: 0;
+    color: #112212;
+    margin-top: 10px;
+    margin-left: 45px;
+    float: left;
+    width: 230px;
+    text-align: left; }
+    header .title h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 40px;
+      font-weight: normal; }
+    header .title h2 {
+      padding: 0;
+      margin: 0;
+      font-size: 35px;
+      font-weight: normal; }
+  @media only screen and (min-width: 1310px) {
+    header .title {
+      margin-top: 10px;
+      margin-left: 35px;
+      width: 250px; }
+      header .title h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 25px; }
+      header .title h2 {
+        padding: 0;
+        margin: 0;
+        font-size: 21px; } }
+  header nav {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 3;
+    width: 340px;
+    top: 100px;
+    right: 0; }
+    header nav ul {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+    header nav li {
+      background-color: #F07818;
+      border-style: solid;
+      border-width: 10px;
+      border-color: #b2591a #FFA024 #FFA024 #b2591a;
+      padding: 0;
+      margin: 0;
+      width: 320px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle; }
+    header nav a {
+      color: #000;
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-size: 50px;
+      text-decoration: none; }
+  @media only screen and (min-width: 1310px) {
+    header nav {
+      display: inline-block;
+      vertical-align: top;
+      float: right;
+      width: 900px;
+      margin-right: 10px;
+      position: static; }
+      header nav li {
+        display: inline-block;
+        vertical-align: top;
+        width: 200px;
+        height: 65px;
+        line-height: 65px;
+        border-width: 5px; }
+      header nav a {
+        font-size: 35px; } }
+  header .showNav {
+    display: block; }
+  header .hideNav {
+    display: none; }
+  @media only screen and (min-width: 1310px) {
+    header .hideNav {
+      display: block; } }
+  header .hamburger {
+    background-color: #F07818;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #b2591a #FFA024 #FFA024 #b2591a;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float: right;
+    width: 80px;
+    height: 80px;
+    line-height: 75px;
+    font-size: 120px;
+    color: #763317;
+    background-color: #F07818;
+    background-size: 100px 100px; }
+  @media only screen and (min-width: 1310px) {
+    header .hamburger {
+      display: none; } }
+
+@media only screen and (min-width: 1310px) {
+  header {
+    position: static;
+    height: 75px; } }
 
 .content {
   padding: 100px 0;
@@ -34,205 +160,84 @@ header {
   width: 100%;
   max-width: 1300px; }
 
-.title {
-  padding: 0;
-  margin: 0;
-  color: #1a3a2b;
-  margin-top: 10px;
-  margin-left: 45px;
-  float: left;
-  width: 350px;
-  text-align: left; }
-  .title h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 40px;
-    font-weight: normal; }
-  .title h2 {
-    padding: 0;
-    margin: 0;
-    font-size: 35px;
-    font-weight: normal; }
-
-.hamburger {
-  background-color: #F07818;
-  border-style: solid;
-  border-width: 10px;
-  border-color: #b2591a #FFA024 #FFA024 #b2591a;
-  cursor: default;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  float: right;
-  width: 80px;
-  height: 80px;
-  line-height: 75px;
-  font-size: 120px;
-  color: #763317;
-  background-color: #F07818;
-  background-size: 100px 100px; }
-
-.showNav {
-  display: block; }
-
-.hideNav {
-  display: none; }
-
-nav {
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  z-index: 3;
-  width: 340px;
-  top: 100px;
-  right: 0; }
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none; }
-  nav li {
-    background-color: #F07818;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #b2591a #FFA024 #FFA024 #b2591a;
-    padding: 0;
-    margin: 0;
-    width: 320px;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    vertical-align: middle; }
-  nav a {
-    color: #000;
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 50px;
-    text-decoration: none; }
-
-.closeNav {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 2; }
-
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1310px) {
   .content {
-    padding-top: 0; }
-  header {
-    position: static;
-    height: 75px; }
-  .hideNav {
-    display: block; }
-  .title {
-    margin-top: 10px;
-    margin-left: 35px;
-    width: 250px; }
-    .title h1 {
-      padding: 0;
-      margin: 0;
-      font-size: 25px; }
-    .title h2 {
-      padding: 0;
-      margin: 0;
-      font-size: 21px; }
-  .hamburger {
-    display: none; }
-  .closeNav {
-    display: none; }
-  nav {
-    display: inline-block;
-    vertical-align: top;
-    width: 900px;
-    position: static;
-    float: none; }
-    nav ul {
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-      vertical-align: top; }
-    nav li {
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-      vertical-align: top;
-      width: 200px;
-      height: 50px;
-      line-height: 50px;
-      text-align: center;
-      vertical-align: middle; } }
+    padding: 0 0 100px 0; } }
 
-.ppContainer {
+.project-preview {
   position: relative;
   font-size: 20px;
-  border: 1px solid #000;
-  margin: 20px auto;
+  border: 2px solid #112212;
+  margin: 18px auto;
   width: 90%;
+  min-width: 900px;
   height: 325px; }
-  .ppContainer p {
+  .project-preview p {
     margin: 10px; }
+  .project-preview .image {
+    position: relative;
+    float: left;
+    margin: 10px 15px 10px 10px;
+    width: 350px;
+    height: 300px;
+    border: solid 1px #78C0A8;
+    z-index: 1; }
+  @media only screen and (min-width: 1310px) {
+    .project-preview .image {
+      margin: 10px; } }
+  .project-preview .title-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #78C0A8; }
+  @media only screen and (min-width: 1310px) {
+    .project-preview .title-bg {
+      height: 370px; } }
+  .project-preview .title {
+    font-family: 'VT323', monospace;
+    position: relative;
+    font-size: 50px;
+    z-index: 1;
+    padding-bottom: 20px;
+    color: #112212; }
+  @media only screen and (min-width: 1310px) {
+    .project-preview .title {
+      font-size: 40px;
+      padding-bottom: 10px; } }
+  .project-preview .technologies-label {
+    font-family: 'VT323', monospace;
+    font-size: 35px; }
+  @media only screen and (min-width: 1310px) {
+    .project-preview .technologies-label {
+      font-size: 25px; } }
+  .project-preview .technologies {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold; }
+  @media only screen and (min-width: 1310px) {
+    .project-preview .technologies {
+      font-size: 18px; } }
+  .project-preview .description {
+    height: 140px;
+    color: #333;
+    font-size: 20px;
+    overflow: hidden;
+    line-height: 20px; }
+  @media only screen and (min-width: 1310px) {
+    .project-preview .description {
+      height: 60px;
+      font-size: 14px; } }
 
-.ppImage {
-  position: relative;
-  float: left;
-  margin: 10px;
-  margin-right: 15px;
-  width: 350px;
-  height: 300px;
-  border: solid 1px #78C0A8;
-  z-index: 1; }
-
-.ppTitleBg {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 70px;
-  background-color: #78C0A8; }
-
-.ppTitle {
-  font-family: 'VT323', monospace;
-  position: relative;
-  font-size: 50px;
-  z-index: 1;
-  padding-bottom: 20px; }
-
-.ppTechnologiesLabel {
-  font-family: 'VT323', monospace;
-  font-size: 35px; }
-
-.ppTechnologies {
-  color: #333;
-  font-size: 24px;
-  font-weight: bold; }
-
-.ppDescription {
-  height: 140px;
-  color: #333;
-  font-size: 20px;
-  overflow: hidden;
-  line-height: 20px; }
-
-@media only screen and (min-width: 1100px) {
-  .ppContainer {
+@media only screen and (min-width: 1310px) {
+  .project-preview {
     display: inline-block;
     vertical-align: top;
-    margin: 30px;
+    margin: 28px;
     width: 370px;
-    height: 470px;
-    font-size: 16px; }
-    .ppContainer p {
-      margin: 10px; }
-  .ppImage {
-    margin: 10px;
-    width: 350px;
-    height: 300px; }
-  .ppDescription {
-    height: 60px;
-    overflow: hidden;
-    line-height: 20px; } }
+    min-width: 370px;
+    height: 510px;
+    font-size: 16px; } }
 
 .achievementBar {
   position: fixed;
@@ -241,10 +246,18 @@ nav {
   height: 100px;
   width: 100%;
   background-color: #2c5949;
-  text-align: center; }
+  text-align: center;
+  cursor: default;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; }
+  .achievementBar::-webkit-scrollbar {
+    display: none; }
 
 .achievement {
   display: inline-block;
+  vertical-align: top;
   margin: 10px;
   height: 80px;
   width: 80px;

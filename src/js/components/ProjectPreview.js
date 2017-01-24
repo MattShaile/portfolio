@@ -8,16 +8,16 @@ export default class ProjectPreview extends React.Component {
 
   render() {
     return (
-      <div class="ppContainer">
-        <div class="ppTitleBg"></div>
+      <div class="project-preview">
+        <div class="title-bg"></div>
 
-        <img class="ppImage" src={this.props.thumb}/>
+        <img class="image" src={this.props.thumb}/>
 
-        <p class="ppTitle">{this.props.name}</p>
-        <p><span class="ppTechnologiesLabel">Technologies:</span> <span
-          class="ppTechnologies">{this.props.tech}</span></p>
+        <p class="title">{this.props.name}</p>
+        <p><span class="technologies-label">Technologies:</span> <span
+          class="technologies">{this.props.tech}</span></p>
 
-        <p class="ppDescription">
+        <p class="description">
           {this.props.description}
         </p>
 

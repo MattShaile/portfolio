@@ -19,7 +19,6 @@ export default class AchievementBar extends React.Component {
         <Achievement/>
         <Achievement/>
         <Achievement/>
-        <Achievement/>
       </div>
     );
   }

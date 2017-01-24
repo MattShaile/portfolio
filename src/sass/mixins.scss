@@ -1,6 +1,6 @@
 $bg-color: #FCEBB6;
 $header-color: #78C0A8;
-$title-color: #1a3a2b;
+$title-color: #112212;
 $font-color: #000;
 $p-color: #333;
 $highlight-color: #FFA024;
@@ -13,6 +13,8 @@ $button-light-color: #FFA024;
 $hamburger-color: #763317;
 
 $footer-color: #2c5949;
+
+$desktop-only: "only screen and (min-width: 1310px)";
 
 @mixin pixel-font() {
   font-family: 'VT323', monospace;
