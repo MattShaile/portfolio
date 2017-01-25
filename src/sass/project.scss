@@ -5,48 +5,48 @@
   @include no-margins();
   @include pixel-font();
 
-  width: 200px;
+  cursor: pointer;
 
+  font-size: 40px;
+
+  font-weight: normal;
   margin: 20px auto;
 
   text-align: center;
   text-transform: capitalize;
 
-  font-weight: normal;
-  font-size: 40px;
-
-  cursor: pointer;
+  width: 200px;
 }
 
 .project {
-  position: relative;
+  border: 2px solid $title-color;
 
   font-size: 20px;
-
-  border: 2px solid $title-color;
 
   margin: 18px auto;
 
   min-height: 650px;
 
-  width: 90%;
   min-width: 900px;
+
+  position: relative;
+  width: 90%;
 
   span {
     @include no-margins();
   }
 
   p {
-    padding: 0;
     margin: 0 30px 10px 30px;
+    padding: 0;
   }
 
   h3 {
     @include no-margins();
 
-    margin-left: 5%;
-
     font-weight: normal;
+
+    margin-left: 5%;
   }
 
   .title-bg {
@@ -71,12 +71,12 @@
   }
 
   .main-container {
-    position: relative;
-    z-index: 1;
-
     background-color: $header-color;
+    position: relative;
 
     width: 100%;
+
+    z-index: 1;
   }
 
   @media #{$desktop-only} {
@@ -92,10 +92,13 @@
   }
 
   .copy-container {
+    position: relative;
+    z-index: 1;
+
     .link-container {
+      background-color: $header-color;
       margin-top: -2px;
       padding-bottom: 10px;
-      background-color: $header-color;
     }
 
     @media #{$desktop-only} {
@@ -105,16 +108,14 @@
       }
     }
 
-    position: relative;
-    z-index: 1;
   }
 
   .image {
+    border: solid 1px $title-color;
+
     margin: 0 0 20px 5%;
 
     width: 90%;
-
-    border: solid 1px $title-color;
   }
 
   @media #{$desktop-only} {
@@ -126,13 +127,13 @@
   .title {
     @include pixel-font();
 
-    font-size: 50px;
+    color: $title-color;
 
-    z-index: 1;
+    font-size: 50px;
 
     padding: 20px 0;
 
-    color: $title-color;
+    z-index: 1;
   }
 
   .label {
@@ -157,11 +158,11 @@
 
   .description {
 
-    white-space: pre-line;
+    color: $p-color;
+
+    font-size: 20px;
 
     margin: 30px;
-
-    color: $p-color;
-    font-size: 20px;
+    white-space: pre-line;
   }
 }

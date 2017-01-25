@@ -1,23 +1,23 @@
 @import 'mixins';
 
 .achievementBar {
-  position: fixed;
-  z-index: 1;
-
-  bottom: 0;
-
-  height: 100px;
-  width: 100%;
-
   background-color: $footer-color;
-
-  text-align: center;
+  bottom: 0;
 
   cursor: default;
 
-  white-space: nowrap;
-  overflow-y: hidden;
+  height: 100px;
   overflow-x: scroll;
+
+  overflow-y: hidden;
+
+  position: fixed;
+
+  text-align: center;
+
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
   -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     display: none;
@@ -27,10 +27,10 @@
 .achievement {
   @include inline();
 
-  margin: 10px;
+  background-color: #fff;
 
   height: 80px;
-  width: 80px;
+  margin: 10px;
 
-  background-color: #fff;
+  width: 80px;
 }

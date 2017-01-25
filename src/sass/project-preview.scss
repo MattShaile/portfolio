@@ -5,19 +5,19 @@
   @include no-margins();
   @include pixel-font();
 
+  cursor: default;
+
+  font-size: 40px;
+  font-weight: normal;
+
   height: 70px;
 
+  line-height: 70px;
   margin: 0 auto;
+
   padding-left: 30px;
 
   text-transform: capitalize;
-
-  font-weight: normal;
-  font-size: 40px;
-
-  line-height: 70px;
-
-  cursor: default;
 }
 
 @media #{$desktop-only} {
@@ -31,37 +31,37 @@
 
   margin: 0 auto;
 
-  width: 100%;
   max-width: 1290px;
+  width: 100%;
 
   .project-preview {
-    position: relative;
+    border: 2px solid $title-color;
 
     font-size: 20px;
 
-    border: 2px solid $title-color;
+    height: 325px;
 
     margin: 18px auto;
 
-    width: 90%;
     min-width: 900px;
-    height: 325px;
+    position: relative;
+    width: 90%;
 
     p {
       margin: 10px;
     }
 
     .image {
-      position: relative;
+      border: solid 1px $header-color;
 
       float: left;
 
-      margin: 10px 15px 10px 10px;
-
-      width: 350px;
       height: 300px;
 
-      border: solid 1px $header-color;
+      margin: 10px 15px 10px 10px;
+      position: relative;
+
+      width: 350px;
 
       z-index: 1;
     }
@@ -73,14 +73,14 @@
     }
 
     .title-bg {
-      position: absolute;
+      background-color: $header-color;
 
+      height: 70px;
+
+      position: absolute;
       top: 0;
 
       width: 100%;
-      height: 70px;
-
-      background-color: $header-color;
     }
 
     @media #{$desktop-only} {
@@ -92,15 +92,15 @@
     .title {
       @include pixel-font();
 
-      position: relative;
+      color: $title-color;
 
       font-size: 50px;
 
-      z-index: 1;
-
       padding-bottom: 20px;
 
-      color: $title-color;
+      position: relative;
+
+      z-index: 1;
     }
 
     @media #{$desktop-only} {
@@ -136,13 +136,13 @@
     }
 
     .description {
+      color: $p-color;
+
+      font-size: 20px;
       height: 140px;
 
-      color: $p-color;
-      font-size: 20px;
-
-      overflow: hidden;
       line-height: 20px;
+      overflow: hidden;
     }
 
     @media #{$desktop-only} {

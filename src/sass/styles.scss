@@ -3,9 +3,9 @@
 html, body {
   @include no-margins();
 
-  font-family: sans-serif;
-
   background-color: $bg-color;
+
+  font-family: sans-serif;
 }
 
 a {
