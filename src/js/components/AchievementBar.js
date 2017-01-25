@@ -1,8 +1,16 @@
 import React from "react";
+import {connect} from "react-redux";
+
+import signal from "signal-js";
 
 import store from "../store";
 import Achievement from "./Achievement";
 
+@connect((store) => {
+  return {
+    achievements: store.achievements.achievements
+  };
+})
 export default class AchievementBar extends React.Component {
 
   constructor(state) {
@@ -15,6 +23,8 @@ export default class AchievementBar extends React.Component {
 
     this.pendingUnlocks = [];
     this.animating = false;
+
+    signal.on("achievementUnlocked", this.unlockAchievement.bind(this));
   }
 
   unlockAchievement(achievement) {
@@ -32,11 +42,11 @@ export default class AchievementBar extends React.Component {
 
       this.animating = true;
 
-      let achievement = this.pendingUnlocks.shift();
+      let achievementText = this.props.achievements[this.pendingUnlocks.shift()].description;
 
       this.setState({
         class: "notification open",
-        text: achievement
+        text: achievementText
       });
 
       setTimeout(() => {
@@ -49,14 +59,14 @@ export default class AchievementBar extends React.Component {
           this.animating = false;
           this.nextUnlock();
         }, 1000);
-      }, 2000);
+      }, 5000);
     }
   }
 
   render() {
     return (
       <div>
-        <div class={this.state.class}>ACHIEVEMENT UNLOCKED! {this.state.text}</div>
+        <div class={this.state.class}>Achievement --- {this.state.text} --- (click to clear)</div>
         <div class="achievement-bar">
           <Achievement name="Casino" img="/img/gambling.png"/>
           <Achievement name="Unity" img="/img/unity.png"/>

@@ -48,6 +48,7 @@
     "redux-promise": "^0.5.3",
     "redux-promise-middleware": "^4.2.0",
     "redux-thunk": "^2.2.0",
+    "signal-js": "^1.0.2",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
   }
