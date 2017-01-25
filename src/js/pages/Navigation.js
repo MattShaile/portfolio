@@ -41,10 +41,10 @@ export default class Navigation extends React.Component {
             </div>
             <nav>
               <ul class={this.state.navOpenClass}>
-                <li><Link to="projects/javascript">Javascript</Link></li>
-                <li><Link to="projects/unity">Unity</Link></li>
-                <li><Link to="projects/casino">Casino</Link></li>
-                <li><Link to="projects/more">More</Link></li>
+                <li><Link to="/projects/javascript">Javascript</Link></li>
+                <li><Link to="/projects/unity">Unity</Link></li>
+                <li><Link to="/projects/casino">Casino</Link></li>
+                <li><Link to="/projects/more">More</Link></li>
               </ul>
             </nav>
           </div>

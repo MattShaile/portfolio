@@ -9,7 +9,7 @@ export default class ProjectPreview extends React.Component {
 
   render() {
     return (
-      <Link to={"project/" + this.props.name.toLowerCase()}>
+      <Link to={"/project/" + this.props.name.toLowerCase()}>
         <div class="project-preview">
           <div class="title-bg"></div>
 
