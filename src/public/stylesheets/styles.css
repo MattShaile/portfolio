@@ -380,7 +380,7 @@ header {
     margin: 30px;
     white-space: pre-line; }
 
-.achievementBar {
+.achievement-bar {
   background-color: #2c5949;
   bottom: 0;
   cursor: default;
@@ -393,17 +393,42 @@ header {
   width: 100%;
   z-index: 1;
   -webkit-overflow-scrolling: touch; }
-  .achievementBar::-webkit-scrollbar {
+  .achievement-bar::-webkit-scrollbar {
     display: none; }
-  .achievementBar .achievement {
+  .achievement-bar .achievement {
     display: inline-block;
     vertical-align: top;
     height: 80px;
     margin: 10px;
     width: 80px; }
-    .achievementBar .achievement .locked {
+    .achievement-bar .achievement .locked {
+      filter: brightness(0%);
+      -ms-filter: brightness(0%);
       -webkit-filter: brightness(0%);
       -moz-filter: brightness(0%);
-      -o-filter: brightness(0%);
-      -ms-filter: brightness(0%);
-      filter: brightness(0%); }
+      -o-filter: brightness(0%); }
+
+.notification {
+  background-color: #000;
+  bottom: 100px;
+  color: #fff;
+  height: 0px;
+  position: fixed;
+  text-align: center;
+  transition: height 0.5s linear;
+  -moz-transition: height 0.5s linear;
+  -ms-transition: height 0.5s linear;
+  -o-transition: height 0.5s linear;
+  -webkit-transition: height 0.5s linear;
+  width: 100%;
+  z-index: 3;
+  line-height: 50px;
+  overflow-y: hidden; }
+
+.notification.open {
+  height: 50px;
+  transition: height 0.5s linear;
+  -moz-transition: height 0.5s linear;
+  -ms-transition: height 0.5s linear;
+  -o-transition: height 0.5s linear;
+  -webkit-transition: height 0.5s linear; }

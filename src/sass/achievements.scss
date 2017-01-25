@@ -1,6 +1,6 @@
 @import 'mixins';
 
-.achievementBar {
+.achievement-bar {
   background-color: $footer-color;
   bottom: 0;
 
@@ -8,7 +8,6 @@
 
   height: 100px;
   overflow-x: scroll;
-
   overflow-y: hidden;
 
   position: fixed;
@@ -32,14 +31,46 @@
     width: 80px;
 
     .locked {
-       -webkit-filter: brightness(0%);
-       -moz-filter: brightness(0%);
-       -o-filter: brightness(0%);
-       -ms-filter: brightness(0%);
-       filter: brightness(0%);
-     }
+      filter: brightness(0%);
+      -ms-filter: brightness(0%);
+      -webkit-filter: brightness(0%);
+      -moz-filter: brightness(0%);
+      -o-filter: brightness(0%);
+    }
 
     .unlocked {
     }
   }
+}
+
+.notification {
+  background-color: #000;
+  bottom: 100px;
+
+  color: #fff;
+  height: 0px;
+
+  position: fixed;
+
+  text-align: center;
+  transition: height 0.5s linear;
+
+  -moz-transition: height 0.5s linear;
+  -ms-transition: height 0.5s linear;
+  -o-transition: height 0.5s linear;
+  -webkit-transition: height 0.5s linear;
+  width: 100%;
+  z-index: 3;
+
+  line-height: 50px;
+  overflow-y: hidden;
+}
+
+.notification.open {
+  height: 50px;
+  transition: height 0.5s linear;
+  -moz-transition: height 0.5s linear;
+  -ms-transition: height 0.5s linear;
+  -o-transition: height 0.5s linear;
+  -webkit-transition: height 0.5s linear;
 }
