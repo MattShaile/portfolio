@@ -25,10 +25,17 @@ export default class AchievementBar extends React.Component {
     this.animating = false;
 
     signal.on("achievementUnlocked", this.unlockAchievement.bind(this));
+    signal.on("achievementLocked", this.lockAchievement.bind(this));
+  }
+
+  lockAchievement(achievement) {
+    this.pendingUnlocks.push("Achievement deleted (" + achievement + ")");
+
+    this.nextUnlock();
   }
 
   unlockAchievement(achievement) {
-    this.pendingUnlocks.push(achievement);
+    this.pendingUnlocks.push("Achievement --- " + this.props.achievements[achievement].description);
 
     this.nextUnlock();
   }
@@ -42,7 +49,7 @@ export default class AchievementBar extends React.Component {
 
       this.animating = true;
 
-      let achievementText = this.props.achievements[this.pendingUnlocks.shift()].description;
+      let achievementText = this.pendingUnlocks.shift();
 
       this.setState({
         class: "notification open",
@@ -59,14 +66,14 @@ export default class AchievementBar extends React.Component {
           this.animating = false;
           this.nextUnlock();
         }, 1000);
-      }, 5000);
+      }, 3000);
     }
   }
 
   render() {
     return (
       <div>
-        <div class={this.state.class}>Achievement --- {this.state.text} --- (click to clear)</div>
+        <div class={this.state.class}>{this.state.text}</div>
         <div class="achievement-bar">
           <Achievement name="Casino" img="/img/gambling.png"/>
           <Achievement name="Unity" img="/img/unity.png"/>

@@ -54,6 +54,11 @@ export default function reducer(state = defaultState, action) {
     case actions.LOCK_ACHIEVEMENT:
     {
       let achievements = { ...state.achievements };
+
+      if (achievements[action.payload].unlocked) {
+        signal.trigger("achievementLocked", action.payload);
+      }
+
       achievements[action.payload].unlocked = false;
       Cookie.remove(action.payload);
 
