@@ -47,9 +47,6 @@ export default class ProjectList extends React.Component {
 
     return (
       <div>
-        <div class="section-title">
-          {technology}
-        </div>
         <div class="preview-container">
           {projectElements}
         </div>

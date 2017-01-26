@@ -10,7 +10,7 @@ export const actions = {
 export function fetchProjects() {
   return {
     type: actions.FETCH_PROJECTS,
-    payload: axios.get("/projects.json")
+    payload: axios.get("http://matthewshaile.com:3000")
   }
 }
 

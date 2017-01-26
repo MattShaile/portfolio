@@ -3,7 +3,7 @@
 .section-title {
   @include bevel();
   @include no-margins();
-  @include pixel-font();
+  @include custom-font();
 
   cursor: default;
 
@@ -35,7 +35,7 @@
   width: 100%;
 
   .project-preview {
-    border: 2px solid $title-color;
+    border: 2px solid $border-color;
 
     font-size: 20px;
 
@@ -52,7 +52,7 @@
     }
 
     .image {
-      border: solid 1px $header-color;
+      border-radius: 10px;
 
       float: left;
 
@@ -90,11 +90,11 @@
     }
 
     .title {
-      @include pixel-font();
+      @include custom-font();
 
       color: $title-color;
 
-      font-size: 50px;
+      font-size: 40px;
 
       padding-bottom: 20px;
 
@@ -105,16 +105,16 @@
 
     @media #{$desktop-only} {
       .title {
-        font-size: 40px;
+        font-size: 30px;
 
         padding-bottom: 10px;
       }
     }
 
     .technologies-label {
-      @include pixel-font();
+      @include custom-font();
 
-      font-size: 35px;
+      font-size: 25px;
     }
 
     @media #{$desktop-only} {

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {Router, Route, IndexRoute, browserHistory} from "react-router";
+import {Router, Route, IndexRoute, hashHistory} from "react-router";
 import { Provider } from "react-redux";
 
 import store from "./store";
@@ -12,7 +12,7 @@ import Project from "./pages/Project";
 const app = document.getElementById('app');
 ReactDOM.render(
   <Provider store={store}>
-    <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
+    <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
       <Route path="/" component={Navigation}>
         <IndexRoute component={ProjectList}/>
         <Route path="/projects(/:technology)" component={ProjectList}/>

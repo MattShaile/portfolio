@@ -41,10 +41,14 @@ export default class Navigation extends React.Component {
             </div>
             <nav>
               <ul class={this.state.navOpenClass}>
-                <li><Link to="/projects/javascript">Javascript</Link></li>
-                <li><Link to="/projects/unity">Unity</Link></li>
-                <li><Link to="/projects/casino">Casino</Link></li>
-                <li><Link to="/projects/more">More</Link></li>
+                <li><Link to="/projects/javascript" activeClassName="link-selected" onClick={this.closeNav.bind(this)}>Javascript</Link>
+                </li>
+                <li><Link to="/projects/unity" activeClassName="link-selected"
+                          onClick={this.closeNav.bind(this)}>Unity</Link></li>
+                <li><Link to="/projects/casino" activeClassName="link-selected" onClick={this.closeNav.bind(this)}>Casino</Link>
+                </li>
+                <li><Link to="/projects/more" activeClassName="link-selected"
+                          onClick={this.closeNav.bind(this)}>More</Link></li>
               </ul>
             </nav>
           </div>

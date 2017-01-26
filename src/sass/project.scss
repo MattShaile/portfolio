@@ -3,7 +3,7 @@
 .back-button {
   @include bevel();
   @include no-margins();
-  @include pixel-font();
+  @include custom-font();
 
   cursor: pointer;
 
@@ -92,6 +92,8 @@
   }
 
   .copy-container {
+    min-height: 500px;
+    border: solid 1px #000;
     position: relative;
     z-index: 1;
 
@@ -125,7 +127,7 @@
   }
 
   .title {
-    @include pixel-font();
+    @include custom-font();
 
     color: $title-color;
 
@@ -137,11 +139,11 @@
   }
 
   .label {
-    @include pixel-font();
+    @include custom-font();
 
     color: $title-color;
 
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .technologies {
