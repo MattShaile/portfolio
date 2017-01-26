@@ -110,7 +110,16 @@ header {
       vertical-align: middle;
       width: 350px;
 
-      background-color: $header-color;
+      background-size: 100% 200%;
+      background-position: 0 -100%;
+      background-image: linear-gradient(to bottom, $secondary-color 50%, $header-color 50%);
+      -webkit-transition: background-position 0.5s;
+      -moz-transition: background-position 0.5s;
+      transition: background-position 0.5s;
+    }
+
+    li:hover {
+      background-position: 0 0;
     }
 
     a {

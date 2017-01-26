@@ -93,6 +93,9 @@
 
   .copy-container {
     min-height: 500px;
+    @media #{$desktop-only} {
+      min-height: 650px;
+    }
     border: solid 1px #000;
     position: relative;
     z-index: 1;

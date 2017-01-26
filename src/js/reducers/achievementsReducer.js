@@ -17,34 +17,36 @@ const defaultState = {
       unlocked: Cookie.get("HTML5"),
       description: "View an HTML5 (Javascript) project"
     },
-    Time: {
-      unlocked: Cookie.get("Time"),
-      description: "etc"
-    },
     Five: {
       unlocked: Cookie.get("Five"),
-      description: "etc"
+      description: "Viewed 5 projects"
     },
     Ten: {
       unlocked: Cookie.get("Ten"),
-      description: "etc"
+      description: "Viewed 10 projects"
     }
-  }
+  },
+  viewedProjectsMask: Cookie.get("viewedProjectsMask") || 0,
+  viewedProjectsCount: Cookie.get("viewedProjectsCount") || 0
 };
 
-
 export default function reducer(state = defaultState, action) {
+
+  function setAchievement(obj, name, value) {
+    if (obj[name].unlocked != value) {
+      signal.trigger(value ? "achievementUnlocked" : "achievementLocked", name);
+    }
+
+    obj[name].unlocked = value;
+    Cookie.set(name, value);
+  }
+
   switch (action.type) {
     case actions.UNLOCK_ACHIEVEMENT:
     {
       let achievements = { ...state.achievements };
 
-      if (!achievements[action.payload].unlocked) {
-        signal.trigger("achievementUnlocked", action.payload);
-      }
-
-      achievements[action.payload].unlocked = true;
-      Cookie.set(action.payload, true);
+      setAchievement(achievements, action.payload, "true");
 
       return {
         ...state,
@@ -54,16 +56,54 @@ export default function reducer(state = defaultState, action) {
     case actions.LOCK_ACHIEVEMENT:
     {
       let achievements = { ...state.achievements };
+      let viewedProjectsCount = state.viewedProjectsCount;
+      let viewedProjectsMask = state.viewedProjectsMask;
 
-      if (achievements[action.payload].unlocked) {
-        signal.trigger("achievementLocked", action.payload);
+      setAchievement(achievements, action.payload, "");
+
+      if (action.payload == "Five" || action.payload == "Ten") {
+        Cookie.set("viewedProjectsCount", 0);
+        Cookie.set("viewedProjectsMask", 0);
+        viewedProjectsCount = 0;
+        viewedProjectsMask = 0;
       }
-
-      achievements[action.payload].unlocked = false;
-      Cookie.remove(action.payload);
 
       return {
         ...state,
+        viewedProjectsCount,
+        viewedProjectsMask,
+        achievements
+      };
+    }
+    case actions.VIEWED_PROJECT:
+    {
+      let achievements = { ...state.achievements };
+
+      let viewedProjectsCount = state.viewedProjectsCount;
+      let viewedProjectsMask = state.viewedProjectsMask;
+
+      let newBit = 2<<action.payload;
+
+      let hasBeenViewedBefore = (newBit & viewedProjectsMask) > 0;
+
+      if (!hasBeenViewedBefore) {
+        viewedProjectsCount++;
+        viewedProjectsMask |= newBit;
+
+        Cookie.set("viewedProjectsCount", viewedProjectsCount);
+        Cookie.set("viewedProjectsMask", viewedProjectsMask);
+
+        if (viewedProjectsCount >= 10) {
+          setAchievement(achievements, "Ten", true);
+        } else if (viewedProjectsCount >= 5) {
+          setAchievement(achievements, "Five", true);
+        }
+      }
+
+      return {
+        ...state,
+        viewedProjectsCount,
+        viewedProjectsMask,
         achievements
       };
     }

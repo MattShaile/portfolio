@@ -5,7 +5,7 @@ import _ from "lodash";
 
 import store from "../store";
 import {fetchProjects} from "../actions/projectsActions";
-import {unlockAchievement} from "../actions/achievementActions";
+import {unlockAchievement, viewedProject} from "../actions/achievementActions";
 
 @connect((store) => {
   return {
@@ -63,6 +63,7 @@ export default class Project extends React.Component {
         this.props.dispatch(unlockAchievement("Casino"));
       }
 
+      this.props.dispatch(viewedProject(project.id));
     }
   }
 
