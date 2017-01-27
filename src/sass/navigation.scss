@@ -51,7 +51,9 @@ header {
 
     h1 {
       @include no-margins();
+
       font-size: 27px;
+
       font-weight: normal;
     }
 
@@ -100,7 +102,6 @@ header {
     }
 
     li {
-      @include bevel();
       @include no-margins();
 
       height: 100px;
@@ -113,9 +114,9 @@ header {
       background-size: 100% 200%;
       background-position: 0 -100%;
       background-image: linear-gradient(to bottom, $secondary-color 50%, $header-color 50%);
-      -webkit-transition: background-position 0.5s;
-      -moz-transition: background-position 0.5s;
-      transition: background-position 0.5s;
+      -webkit-transition: background-position 0.25s;
+      -moz-transition: background-position 0.25s;
+      transition: background-position 0.25s;
     }
 
     li:hover {
@@ -159,7 +160,6 @@ header {
   }
 
   .hamburger {
-    @include bevel();
     @include no-select();
 
     background-color: $button-color;

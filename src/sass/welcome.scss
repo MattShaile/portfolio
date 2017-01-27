@@ -1,0 +1,38 @@
+@import 'mixins';
+
+.welcome {
+  @include inline();
+  @include custom-font();
+
+  height: 600px;
+  left: 50%;
+  margin-left: -450px;
+
+  margin-top: -300px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+
+  width: 900px;
+  p, a {
+    font-size: 40px;
+    opacity: 0;
+  }
+
+  @for $i from 1 through 6 {
+    .p-#{$i} {
+      @include animation(fadein 1s linear #{($i - 1) * 2}s);
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@include keyframes(fadein) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

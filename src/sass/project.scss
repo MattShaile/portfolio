@@ -1,7 +1,6 @@
 @import 'mixins';
 
 .back-button {
-  @include bevel();
   @include no-margins();
   @include custom-font();
 
