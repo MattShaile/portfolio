@@ -44,30 +44,38 @@
 }
 
 .notification {
-  background-color: #000;
+  background-color: $secondary-color;
   bottom: 100px;
 
   color: #fff;
   height: 0px;
 
+  overflow-y: hidden;
+
   position: fixed;
-
   text-align: center;
-  transition: height 0.5s linear;
 
+  transition: height 0.5s linear;
   -moz-transition: height 0.5s linear;
   -ms-transition: height 0.5s linear;
   -o-transition: height 0.5s linear;
   -webkit-transition: height 0.5s linear;
   width: 100%;
+
   z-index: 3;
 
-  line-height: 50px;
-  overflow-y: hidden;
+  .text {
+    @include custom-font();
+
+    font-size: 40px;
+
+    height: 200px;
+    margin-top: 100px;
+  }
 }
 
 .notification.open {
-  height: 50px;
+  height: 300px;
   transition: height 0.5s linear;
   -moz-transition: height 0.5s linear;
   -ms-transition: height 0.5s linear;

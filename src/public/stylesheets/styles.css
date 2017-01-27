@@ -397,10 +397,11 @@ header {
       -o-filter: brightness(0%); }
 
 .notification {
-  background-color: #000;
+  background-color: #18bb9b;
   bottom: 100px;
   color: #fff;
   height: 0px;
+  overflow-y: hidden;
   position: fixed;
   text-align: center;
   transition: height 0.5s linear;
@@ -409,12 +410,15 @@ header {
   -o-transition: height 0.5s linear;
   -webkit-transition: height 0.5s linear;
   width: 100%;
-  z-index: 3;
-  line-height: 50px;
-  overflow-y: hidden; }
+  z-index: 3; }
+  .notification .text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    height: 200px;
+    margin-top: 100px; }
 
 .notification.open {
-  height: 50px;
+  height: 300px;
   transition: height 0.5s linear;
   -moz-transition: height 0.5s linear;
   -ms-transition: height 0.5s linear;

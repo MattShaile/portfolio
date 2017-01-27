@@ -29,13 +29,13 @@ export default class AchievementBar extends React.Component {
   }
 
   lockAchievement(achievement) {
-    this.pendingUnlocks.push("Achievement deleted (" + achievement + ")");
+    this.pendingUnlocks.push(<div class="text">Achievement deleted<br /> ({achievement})</div>);
 
     this.nextUnlock();
   }
 
   unlockAchievement(achievement) {
-    this.pendingUnlocks.push("Achievement --- " + this.props.achievements[achievement].description);
+    this.pendingUnlocks.push(<div class="text">Achievement unlocked!<br />{this.props.achievements[achievement].description}</div>);
 
     this.nextUnlock();
   }
