@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {Router, Route, IndexRoute, hashHistory} from "react-router";
+import {Router, Route, IndexRoute, browserHistory} from "react-router";
 import { Provider } from "react-redux";
 
 import store from "./store";
@@ -14,7 +14,7 @@ import Contact from "./components/Contact";
 const app = document.getElementById('app');
 ReactDOM.render(
   <Provider store={store}>
-    <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
+    <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
       <Route path="/" component={Welcome}>
       </Route>
       <Route path="/contact" component={Navigation}>
