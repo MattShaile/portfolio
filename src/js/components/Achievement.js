@@ -24,7 +24,8 @@ export default class Achievement extends React.Component {
   render() {
     return (
       <div class="achievement" onClick={this.lock.bind(this)}>
-        <img class={this.props.achievements[this.props.name].unlocked ? "unlocked" : "locked"} src={this.props.img}/>
+        <img class={this.props.achievements[this.props.name].unlocked ? "unlocked" : "locked"} width="80" height="80"
+             src={this.props.img}/>
       </div>
     );
   }

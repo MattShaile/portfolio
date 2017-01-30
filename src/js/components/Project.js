@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 
 import _ from "lodash";
 
+import Loader from "./Loader";
 import store from "../store";
 import {fetchProjects} from "../actions/projectsActions";
 import {unlockAchievement, viewedProject} from "../actions/achievementActions";
@@ -62,6 +63,9 @@ export default class Project extends React.Component {
       if (project.category.toLowerCase().includes("casino")) {
         this.props.dispatch(unlockAchievement("Casino"));
       }
+      if (project.tech.toLowerCase().includes("react")) {
+        this.props.dispatch(unlockAchievement("React"));
+      }
 
       this.props.dispatch(viewedProject(project.id));
     }
@@ -70,7 +74,7 @@ export default class Project extends React.Component {
   render() {
 
     if (!this.state.project) {
-      return <div>Loading...</div>
+      return <Loader />
     }
 
     return (

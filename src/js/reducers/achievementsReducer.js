@@ -15,7 +15,11 @@ const defaultState = {
     },
     HTML5: {
       unlocked: Cookie.get("HTML5"),
-      description: "View an HTML5 (Javascript) project"
+      description: "View an Javascript project"
+    },
+    React: {
+      unlocked: Cookie.get("React"),
+      description: "View an React project"
     },
     Five: {
       unlocked: Cookie.get("Five"),

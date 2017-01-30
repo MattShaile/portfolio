@@ -27,15 +27,14 @@
 
     height: 80px;
     margin: 10px;
-
     width: 80px;
 
     .locked {
-      filter: brightness(0%);
-      -ms-filter: brightness(0%);
-      -webkit-filter: brightness(0%);
-      -moz-filter: brightness(0%);
-      -o-filter: brightness(0%);
+      filter: brightness(3%);
+      -ms-filter: brightness(3%);
+      -webkit-filter: brightness(3%);
+      -moz-filter: brightness(3%);
+      -o-filter: brightness(3%);
     }
 
     .unlocked {

@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router";
 
-import AchievementBar from "../components/AchievementBar";
+import AchievementBar from "./AchievementBar";
 
 export default class Navigation extends React.Component {
 
@@ -48,8 +48,10 @@ export default class Navigation extends React.Component {
                           onClick={this.closeNav.bind(this)}>Games</Link></li>
                 <li><Link to="/projects/casino" activeClassName="link-selected" onClick={this.closeNav.bind(this)}>Casino</Link>
                 </li>
-                <li><Link to="/projects/full-stack" activeClassName="link-selected"
-                          onClick={this.closeNav.bind(this)}>Full Stack</Link></li>
+                <li><Link to="/projects/server" activeClassName="link-selected"
+                          onClick={this.closeNav.bind(this)}>Server</Link></li>
+                <li><Link to="/contact" activeClassName="link-selected"
+                         onClick={this.closeNav.bind(this)}>Contact</Link></li>
               </ul>
             </nav>
           </div>

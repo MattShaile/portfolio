@@ -15,6 +15,10 @@ p {
 .bold {
   font-weight: bold; }
 
+.loader {
+  text-align: center;
+  margin: 100px; }
+
 .closeNav {
   height: 100%;
   position: fixed;
@@ -117,7 +121,7 @@ header {
       header nav li {
         display: inline-block;
         vertical-align: top;
-        width: 210px;
+        width: 168px;
         height: 75px;
         line-height: 75px; }
       header nav a {
@@ -390,11 +394,11 @@ header {
     margin: 10px;
     width: 80px; }
     .achievement-bar .achievement .locked {
-      filter: brightness(0%);
-      -ms-filter: brightness(0%);
-      -webkit-filter: brightness(0%);
-      -moz-filter: brightness(0%);
-      -o-filter: brightness(0%); }
+      filter: brightness(3%);
+      -ms-filter: brightness(3%);
+      -webkit-filter: brightness(3%);
+      -moz-filter: brightness(3%);
+      -o-filter: brightness(3%); }
 
 .notification {
   background-color: #18bb9b;
@@ -448,39 +452,39 @@ header {
     animation: fadein 1s linear 0s;
     animation-fill-mode: forwards; }
   .welcome .p-2 {
-    -webkit-animation: fadein 1s linear 2s;
-    -moz-animation: fadein 1s linear 2s;
-    -ms-animation: fadein 1s linear 2s;
-    -o-animation: fadein 1s linear 2s;
-    animation: fadein 1s linear 2s;
+    -webkit-animation: fadein 1s linear 1.6s;
+    -moz-animation: fadein 1s linear 1.6s;
+    -ms-animation: fadein 1s linear 1.6s;
+    -o-animation: fadein 1s linear 1.6s;
+    animation: fadein 1s linear 1.6s;
     animation-fill-mode: forwards; }
   .welcome .p-3 {
-    -webkit-animation: fadein 1s linear 4s;
-    -moz-animation: fadein 1s linear 4s;
-    -ms-animation: fadein 1s linear 4s;
-    -o-animation: fadein 1s linear 4s;
-    animation: fadein 1s linear 4s;
+    -webkit-animation: fadein 1s linear 3.2s;
+    -moz-animation: fadein 1s linear 3.2s;
+    -ms-animation: fadein 1s linear 3.2s;
+    -o-animation: fadein 1s linear 3.2s;
+    animation: fadein 1s linear 3.2s;
     animation-fill-mode: forwards; }
   .welcome .p-4 {
-    -webkit-animation: fadein 1s linear 6s;
-    -moz-animation: fadein 1s linear 6s;
-    -ms-animation: fadein 1s linear 6s;
-    -o-animation: fadein 1s linear 6s;
-    animation: fadein 1s linear 6s;
+    -webkit-animation: fadein 1s linear 4.8s;
+    -moz-animation: fadein 1s linear 4.8s;
+    -ms-animation: fadein 1s linear 4.8s;
+    -o-animation: fadein 1s linear 4.8s;
+    animation: fadein 1s linear 4.8s;
     animation-fill-mode: forwards; }
   .welcome .p-5 {
+    -webkit-animation: fadein 1s linear 6.4s;
+    -moz-animation: fadein 1s linear 6.4s;
+    -ms-animation: fadein 1s linear 6.4s;
+    -o-animation: fadein 1s linear 6.4s;
+    animation: fadein 1s linear 6.4s;
+    animation-fill-mode: forwards; }
+  .welcome .p-6 {
     -webkit-animation: fadein 1s linear 8s;
     -moz-animation: fadein 1s linear 8s;
     -ms-animation: fadein 1s linear 8s;
     -o-animation: fadein 1s linear 8s;
     animation: fadein 1s linear 8s;
-    animation-fill-mode: forwards; }
-  .welcome .p-6 {
-    -webkit-animation: fadein 1s linear 10s;
-    -moz-animation: fadein 1s linear 10s;
-    -ms-animation: fadein 1s linear 10s;
-    -o-animation: fadein 1s linear 10s;
-    animation: fadein 1s linear 10s;
     animation-fill-mode: forwards; }
 
 @-webkit-keyframes fadein {
@@ -512,3 +516,9 @@ header {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+.contact {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px; }

@@ -22,7 +22,7 @@
 
   @for $i from 1 through 6 {
     .p-#{$i} {
-      @include animation(fadein 1s linear #{($i - 1) * 2}s);
+      @include animation(fadein 1s linear #{($i - 1) * 1.6}s);
       animation-fill-mode: forwards;
     }
   }

@@ -3,7 +3,8 @@ import {connect} from "react-redux";
 
 import _ from "lodash";
 
-import ProjectPreview from "../components/ProjectPreview";
+import Loader from "./Loader";
+import ProjectPreview from "./ProjectPreview";
 
 import {fetchProjects} from "../actions/projectsActions";
 
@@ -25,7 +26,7 @@ export default class ProjectList extends React.Component {
   render() {
 
     if (!this.props.projects.fetched) {
-      return <div>Loading...</div>
+      return <Loader />
     }
 
     let technology = "javascript";
