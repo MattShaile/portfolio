@@ -420,6 +420,11 @@ header {
     font-size: 40px;
     height: 200px;
     margin-top: 100px; }
+  @media only screen and (min-width: 1310px) {
+    .notification .text {
+      font-size: 20px;
+      height: 80px;
+      margin-top: 25px; } }
 
 .notification.open {
   height: 300px;
@@ -428,6 +433,9 @@ header {
   -ms-transition: height 0.5s linear;
   -o-transition: height 0.5s linear;
   -webkit-transition: height 0.5s linear; }
+  @media only screen and (min-width: 1310px) {
+    .notification.open {
+      height: 100px; } }
 
 .welcome {
   display: inline-block;

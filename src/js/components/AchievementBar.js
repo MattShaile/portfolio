@@ -78,7 +78,7 @@ export default class AchievementBar extends React.Component {
           <Achievement name="Casino" img="/img/gambling.png"/>
           <Achievement name="Unity" img="/img/unity.png"/>
           <Achievement name="React" img="/img/react.png"/>
-          <Achievement name="HTML5" img="/img/html5.png"/>
+          <Achievement name="Javascript" img="/img/html5.png"/>
           <Achievement name="Five" img="/img/five.png"/>
           <Achievement name="Ten" img="/img/ten.png"/>
         </div>

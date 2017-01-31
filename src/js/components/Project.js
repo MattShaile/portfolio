@@ -58,7 +58,7 @@ export default class Project extends React.Component {
         this.props.dispatch(unlockAchievement("Unity"));
       }
       if (project.tech.toLowerCase().includes("javascript")) {
-        this.props.dispatch(unlockAchievement("HTML5"));
+        this.props.dispatch(unlockAchievement("Javascript"));
       }
       if (project.category.toLowerCase().includes("casino")) {
         this.props.dispatch(unlockAchievement("Casino"));

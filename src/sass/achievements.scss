@@ -71,10 +71,22 @@
     height: 200px;
     margin-top: 100px;
   }
+
+  @media #{$desktop-only} {
+    .text {
+      font-size: 20px;
+      height: 80px;
+      margin-top: 25px;
+    }
+  }
 }
 
 .notification.open {
   height: 300px;
+
+  @media #{$desktop-only} {
+    height: 100px;
+  }
   transition: height 0.5s linear;
   -moz-transition: height 0.5s linear;
   -ms-transition: height 0.5s linear;
