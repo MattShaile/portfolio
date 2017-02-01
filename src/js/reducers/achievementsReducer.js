@@ -1,37 +1,36 @@
 import {actions} from "../actions/achievementActions";
 
 import signal from "signal-js";
-import Cookie from "js-cookie";
 
 const defaultState = {
   achievements: {
     Casino: {
-      unlocked: Cookie.get("Casino"),
+      unlocked: false,
       description: "View a casino project"
     },
     Unity: {
-      unlocked: Cookie.get("Unity"),
+      unlocked: false,
       description: "View a Unity project"
     },
     Javascript: {
-      unlocked: Cookie.get("Javascript"),
+      unlocked: false,
       description: "View a Javascript project"
     },
     React: {
-      unlocked: Cookie.get("React"),
+      unlocked: false,
       description: "View a React project"
     },
     Five: {
-      unlocked: Cookie.get("Five"),
+      unlocked: false,
       description: "Viewed 5 projects"
     },
     Ten: {
-      unlocked: Cookie.get("Ten"),
+      unlocked: false,
       description: "Viewed 10 projects"
     }
   },
-  viewedProjectsMask: Cookie.get("viewedProjectsMask") || 0,
-  viewedProjectsCount: Cookie.get("viewedProjectsCount") || 0
+  viewedProjectsMask: 0,
+  viewedProjectsCount: 0
 };
 
 export default function reducer(state = defaultState, action) {
@@ -42,7 +41,6 @@ export default function reducer(state = defaultState, action) {
     }
 
     obj[name].unlocked = value;
-    Cookie.set(name, value);
   }
 
   switch (action.type) {
@@ -66,8 +64,6 @@ export default function reducer(state = defaultState, action) {
       setAchievement(achievements, action.payload, "");
 
       if (action.payload == "Five" || action.payload == "Ten") {
-        Cookie.set("viewedProjectsCount", 0);
-        Cookie.set("viewedProjectsMask", 0);
         viewedProjectsCount = 0;
         viewedProjectsMask = 0;
       }
@@ -93,9 +89,6 @@ export default function reducer(state = defaultState, action) {
       if (!hasBeenViewedBefore) {
         viewedProjectsCount++;
         viewedProjectsMask |= newBit;
-
-        Cookie.set("viewedProjectsCount", viewedProjectsCount);
-        Cookie.set("viewedProjectsMask", viewedProjectsMask);
 
         if (viewedProjectsCount >= 10) {
           setAchievement(achievements, "Ten", true);
